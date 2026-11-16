@@ -2,7 +2,7 @@
 
 A personal portfolio website showing my work in data analytics, product building and creative design.
 
-**Live site:** [https://your-site.vercel.app](https://udhayachandrika-portfolio.vercel.app/)  <!-- replace with your Vercel link -->
+**Live site:** [View Portfolio](https://udhayachandrika-portfolio.vercel.app/) 
 
 ## About
 I'm a final-year B.Tech student in AI & Data Science at VCET. This portfolio brings together my skills, projects, internships, leadership roles and handmade crochet work in one place.
