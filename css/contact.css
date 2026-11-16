@@ -1,0 +1,22 @@
+/* =====================================================
+   CONTACT — heading on top, form below, socials last
+===================================================== */
+.contact-body{margin:0 auto;min-height:100%;width:min(560px,100%);display:flex;flex-direction:column;align-items:center}
+.contact-form{width:100%;display:flex;flex-direction:column;gap:12px;margin-bottom:auto}
+.cf-input,.cf-area{width:100%;background:rgba(255,255,255,.4);border:1px solid transparent;border-radius:12px;padding:13px 16px;font-family:inherit;font-size:clamp(.82rem,1vw,.92rem);font-weight:300;color:var(--ink);outline:none;transition:background .3s,border-color .3s}
+.cf-input::placeholder,.cf-area::placeholder{color:rgba(44,44,62,.4)}
+.cf-input:focus,.cf-area:focus{background:rgba(255,255,255,.65);border-color:rgba(44,44,62,.25)}
+.cf-input.bad,.cf-area.bad{border-color:#b3394f}
+.cf-area{min-height:150px;resize:vertical}
+.cf-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.cf-status{font-size:.78rem;font-weight:400;min-height:1.2em;flex:1}
+.cf-status.ok{color:#256a43}.cf-status.err{color:#a82f45}
+.cf-btn{padding:12px 30px;border-radius:30px;border:none;background:var(--ink);color:#fff;font-family:inherit;font-weight:500;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:opacity .25s,transform .2s}
+.cf-btn:hover{opacity:.82;transform:translateY(-2px)}
+.cf-btn:disabled{opacity:.5;cursor:wait;transform:none}
+.soc-row{display:flex;gap:12px;justify-content:center;margin-top:clamp(22px,3.5vh,34px)}
+.soc{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--glass);border:1px solid var(--glass-bd);box-shadow:0 4px 14px rgba(44,44,62,.08);transition:transform .25s,background .25s}
+.soc:hover{transform:translateY(-3px);background:rgba(255,255,255,.55)}
+.soc svg{width:17px;height:17px;fill:var(--ink)}
+.contact-body .footer{margin-top:0}
+.contact-body .sec-head{margin-top:auto}

@@ -1,0 +1,24 @@
+/* =====================================================
+   CREATIVE CORNER — hobbies gallery (crochet first)
+===================================================== */
+.c-tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:clamp(16px,2.5vh,26px)}
+.c-tab{font-family:inherit;font-size:.72rem;font-weight:500;letter-spacing:.08em;padding:7px 18px;border-radius:20px;border:1px solid var(--glass-bd);background:var(--glass);color:var(--ink);cursor:pointer;transition:background .25s,color .25s}
+.c-tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.c-intro{text-align:center;font-size:clamp(.78rem,1vw,.9rem);font-weight:300;line-height:1.8;color:var(--ink-60);max-width:600px;margin:0 auto clamp(18px,3vh,28px)}
+.c-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:clamp(12px,1.6vw,20px)}
+.c-card{border-radius:18px;overflow:hidden;display:flex;flex-direction:column;padding:0;text-align:left;font-family:inherit;color:inherit;cursor:default}
+.c-card.has-img{cursor:zoom-in}
+.c-media{aspect-ratio:1/1;width:100%;display:grid;place-items:center;background:rgba(255,255,255,.28);position:relative;overflow:hidden}
+.c-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.c-emoji{font-size:2.4rem}
+.c-soon{position:absolute;bottom:8px;left:0;right:0;text-align:center;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-60)}
+.c-info{padding:12px 14px 14px}
+.c-name{font-size:.88rem;font-weight:600}
+.c-note{font-size:.72rem;font-weight:300;color:var(--ink-60);margin-top:2px;line-height:1.5}
+.c-cta{text-align:center;margin-top:clamp(18px,3vh,28px);font-size:.82rem;font-weight:300;color:var(--ink-60)}
+.c-cta button{font-family:inherit;font-size:inherit;font-weight:500;color:var(--ink);background:none;border:none;border-bottom:1px solid var(--ink-30);cursor:pointer;padding:0 0 1px}
+
+.lightbox{position:fixed;inset:0;z-index:500;background:rgba(44,44,62,.78);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lightbox.on{display:flex}
+.lightbox img{max-width:min(92vw,900px);max-height:80vh;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.lightbox p{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font-size:.85rem;letter-spacing:.06em}
