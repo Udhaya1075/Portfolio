@@ -21,7 +21,6 @@ const SKILLS = [
 /* What I'm building right now. state: 'live' (in progress) or any other text (e.g. 'Idea stage').
    Delete a line to hide it. */
 const BUILDING = [
-  { icon:'🧿', name:'FocBee', state:'In progress', live:true, desc:'A focus app that limits distracting apps and keeps goals on track.' },
   { icon:'🌐', name:'VirchX', state:'Idea stage',  live:false, desc:'An interactive 3D world for group discussions.' }
 ];
 

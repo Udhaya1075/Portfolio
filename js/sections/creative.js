@@ -19,16 +19,6 @@ const CREATIVE = [
       { name:'Hair band',         img:'assets/crochet/band.png', note:'' }
     ] },
 
-  { id:'drawing', label:'Drawing', show:true,
-    intro:'Simple sketches and character art, drawn for fun.',
-    items:[
-      { name:'Zenitsu sketch', emoji:'⚡', img:'', note:'' },
-      { name:'Simple art',     emoji:'🖍️', img:'', note:'' }
-    ] },
-
-  { id:'stitching', label:'Stitching', show:true,
-    intro:'A few dresses I’ve stitched myself.',
-    items:[ { name:'Stitched dress', emoji:'👗', img:'', note:'' } ] }
 ];
 
 const CUSTOM_ORDER_CTA = true;   // shows “Interested in a custom piece? Say hi” under the gallery

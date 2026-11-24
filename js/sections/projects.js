@@ -28,7 +28,16 @@ const PROJECTS = [
   { icon:'📈', title:'E-Commerce Sales Analysis', meta:'Personal project',
     tags:['Python','Matplotlib','Excel'],
     desc:'Finance dashboard tracking income, expenses and savings, with data cleaning, extraction and Matplotlib visualisations in Python and Excel.',
-    link:'https://github.com/Udhaya1075/E-Commerce_Sales_Analysis' }
+    link:'https://github.com/Udhaya1075/E-Commerce_Sales_Analysis' },
+
+  { img:'assets/projects/focbee-icon.jpeg', title:'FocBee', meta:'Android app · Personal project',
+    tags:['Flutter','Kotlin','Supabase','Android'],
+    desc:'An Android app that limits time on distracting apps, tracks daily goals and has an AI companion that keeps you focused. I designed the screens, planned the features and built it with AI tools.',
+    links:[
+      { text:'Watch demo ↗',  url:'https://drive.google.com/file/d/1YJGe3aK-Wx9ddBg7WC6SQKYDr0M5_Ig4/view?usp=sharing' },
+      { text:'Screenshots ↗', url:'https://drive.google.com/drive/folders/1eD2QEGqc6BOMUwc2fMGuXYPnsOI2GC2a?usp=sharing' },
+      { text:'Try the app ↗', url:'https://drive.google.com/file/d/1JsXJYY64BoaUovdwryQ6vJ_X91nJFLDX/view?usp=sharing' }
+    ] },
 
   /* ---- TEMPLATE: copy this, remove the comment marks, and add a comma after the block above ----
   ,{ icon:'✨', title:'Project name', meta:'Where / when',
@@ -55,14 +64,13 @@ const PROJECTS = [
     grid.innerHTML = items.map((p, i) => `
       <article class="p-card glass ${animate ? 'reveal' : ''}" style="--i:${i}">
         <div class="p-card-head">
-          <div class="p-icon" aria-hidden="true">${p.icon || '📁'}</div>
+          <div class="p-icon ${p.img ? 'has-img' : ''}" aria-hidden="true">${p.img ? `<img src="${esc(p.img)}" alt="" class="p-img">` : (p.icon || '📁')}</div>
           <div class="p-tags">${(p.tags || []).map(t => `<span class="chip">${esc(t)}</span>`).join('')}</div>
         </div>
         <h3 class="p-title">${esc(p.title)}</h3>
         ${p.meta ? `<p class="p-meta">${esc(p.meta)}</p>` : ''}
         <p class="p-desc">${esc(p.desc)}</p>
-        ${p.link ? `<a class="p-link" href="${esc(p.link)}" target="_blank" rel="noopener">View on GitHub ↗</a>` : ''}
-      </article>`).join('');
+        <div class="p-links">${(p.links || (p.link ? [{ text:'View on GitHub ↗', url:p.link }] : [])).map(l => `<a class="p-link" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.text)}</a>`).join('')}</div>      </article>`).join('');
 
     pager.style.display = pages > 1 ? '' : 'none';
     pager.innerHTML = `
